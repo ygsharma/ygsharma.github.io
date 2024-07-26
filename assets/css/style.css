@@ -1524,7 +1524,44 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
+  /* added by yogesh */
+  header {
+    display: flex;
+    align-items: center;
+  }
+  .h2.article-title {
+      display: flex;
+      align-items: center;
+      margin: 0;
+  }
+  .h2.article-title a {
+      margin-left: 10px;
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+  }
+  .h2.article-title a i {
+      color: white;
+      transition: color 0.3s;
+  }
+  .h2.article-title a:hover i {
+      color: #ffcc00; /* Change this color to whatever hover color you prefer */
+  }
 
+  @media (max-width: 600px) {
+      .h2.article-title {
+          flex-direction: row;
+      }
+      .h2.article-title a {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+      }
+      .h2.article-title a i {
+          color: white; /* Ensures icon remains white on small screens */
+      }
+  }
 
   /**
    * #PORTFOLIO, BLOG
