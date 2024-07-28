@@ -1518,6 +1518,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .about-text {
+    margin-top: 20px;
     margin-bottom: 40px;
   }
 
@@ -1649,6 +1650,9 @@ textarea.form-input::-webkit-resizer {
   }
 
   /* added by yogesh */
+  .timeline {
+    margin-top: 20px;
+  }
   header {
     display: flex;
     align-items: center;
@@ -1664,31 +1668,41 @@ textarea.form-input::-webkit-resizer {
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: color 0.3s;
+  }
+  .h2.article-title a:hover {
+    color: #ffcc00;
   }
   .h2.article-title a i {
     color: white;
     transition: color 0.3s;
   }
   .h2.article-title a:hover i {
-    color: #ffcc00; /* Change this color to whatever hover color you prefer */
+    color: #ffcc00;
   }
 
+  
   @media (max-width: 600px) {
     header {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
     }
     .h2.article-title {
-      flex-direction: row;
+        flex-direction: row;
     }
     .h2.article-title a {
-      margin-left: 10px;
-      display: flex;
-      align-items: center;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
     }
     .h2.article-title a i {
-      color: white; /* Ensures icon remains white on small screens */
+        color: white;
     }
+  }
+
+  /* Projects */
+  .project-list {
+    margin-top: 20px;
   }
 
   /**
@@ -1715,6 +1729,7 @@ textarea.form-input::-webkit-resizer {
   .mapbox {
     height: 380px;
     border-radius: 18px;
+    margin-top: 20px;
   }
 
   .input-wrapper {
